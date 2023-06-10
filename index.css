@@ -275,6 +275,11 @@ main {
   margin: 0 0 0 var(--spacing-md);
   color: var(--purple-2);
 }
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .hero p {
   max-width: 480px;
 }
@@ -288,6 +293,11 @@ main {
 }
 
 /* PARTNERS SECITON */
+.partners-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -304,6 +314,9 @@ main {
 /* UNIFIED PLATFORM */
 .unified-patform-section {
   padding: var(--spacing-xl) 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .unified-patform-section h2 {
   width: 50%;
@@ -318,6 +331,11 @@ main {
 }
 
 /* GRAPHIC GRID SECTION */
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .graphic-grid {
   display: grid;
   grid-template-areas:
@@ -354,6 +372,9 @@ main {
 .integrations-section {
   color: var(--text-light);
   background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .integrations-section .primary-button {
@@ -388,6 +409,11 @@ main {
 }
 
 /* why swipe section */
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .why-swipe-section .card-container {
   display: flex;
   margin: var(--spacing-lg) 0;
@@ -400,4 +426,36 @@ main {
 }
 .why-swipe-section .secondary-text {
   color: var(--text-dark);
+}
+
+/* Global section */
+.global-section {
+  background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--bg-light);
+}
+
+.global-section a {
+  color: var(--blue-1);
+}
+.global-section a:hover {
+  color: var(--text-light);
+}
+.global-section .card-container {
+  display: flex;
+  margin: calc(var(--spacing-xl) * 2) 0;
+}
+.global-section .card-container .card {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+
+.global-section .card-container .card h3 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 28px;
 }
