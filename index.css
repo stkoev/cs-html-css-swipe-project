@@ -20,6 +20,8 @@
   --secondary-text-height: 18px;
   --button-size: 16px;
 
+  --standard-width: 1144px;
+
   /* spacing */
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -41,6 +43,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
+  background-color: var(--purple-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -168,4 +175,35 @@ p {
 }
 .with-icon:hover > img {
   transform: translateX(5px);
+}
+
+/* Menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--standard-width);
+  padding: 0 var(--spacing-md);
+}
+.menu {
+  display: inline;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.menu a {
+  color: var(--bg-light);
+  margin: 0 var(--spacing-md);
+  font-weight: bold;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.navbar-button {
+  color: rgba(250, 250, 250, 0.25);
+}
+.navbar-button:hover {
+  background: rgba(250, 250, 250, 0.5);
 }
