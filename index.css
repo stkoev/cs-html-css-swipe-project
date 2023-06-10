@@ -35,6 +35,8 @@
   --primary-button-hover: #6d7a88;
   --bg-white: white;
   --bg-light: #f7f9fc;
+
+  --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
 }
 body {
   font-family: var(--body-font);
@@ -294,4 +296,37 @@ main {
 }
 .unified-patform-section .primary-button:hover {
   background-color: var(--primary-accent);
+}
+
+/* GRAPHIC GRID SECTION */
+.graphic-grid {
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+  grid-gap: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+}
+
+#credit-card {
+  grid-area: card;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+#slack-invoice {
+  grid-area: slack;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+#phone {
+  grid-area: phone;
+  width: 100%;
+
+  box-shadow: var(--standard-box-shadow);
+}
+#dash {
+  grid-area: dash;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
 }
