@@ -244,3 +244,26 @@ p {
 }
 
 /* HERO CONTENT */
+main {
+  margin: var(--spacing-xl) 0;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin: var(--spacing-md) 0;
+}
+.button-container button:nth-of-type(2) {
+  margin: 0 0 0 var(--spacing-md);
+  color: var(--purple-2);
+}
+.hero p {
+  max-width: 480px;
+}
+.hero .hero-phone-container {
+  height: 564px;
+  align-items: flex-end;
+}
+.hero-phone {
+  height: 628px;
+  transform: translate(32px, -32px);
+}
