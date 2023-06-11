@@ -747,6 +747,15 @@ main {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+  /* global scale section */
+  .global-section .card-container {
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+  }
+  .global-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /* Mobiel SIZE */
@@ -777,6 +786,14 @@ main {
   }
   .why-swipe-section .card-container .card img {
     height: 50px;
+  }
+  /* Global section */
+  .global-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+  #globe {
+    opacity: 10%;
   }
 }
 
