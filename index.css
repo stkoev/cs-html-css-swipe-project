@@ -756,6 +756,17 @@ main {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+  /* getting started section */
+  .getting-started-section .two-column {
+    align-items: center;
+  }
+  .getting-started-section .col-right {
+    flex-wrap: wrap;
+  }
+  .getting-started-section .col-right .card {
+    width: 100%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /* Mobiel SIZE */
@@ -808,6 +819,24 @@ main {
   }
   #sessions-logo {
     width: 300px;
+  }
+
+  /* footer */
+  .footer .section-container {
+    flex-wrap: wrap;
+  }
+  .footer .col {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+  .footer .col a {
+    font-size: 14px;
+  }
+  #footer-logo {
+    width: 65px;
+  }
+  .footer .icon-link img {
+    width: 18px;
   }
 }
 
