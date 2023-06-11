@@ -711,6 +711,13 @@ main {
     width: 100%;
     height: auto;
   }
+  /* Integration section */
+  .integrations-section .col-left {
+    width: 60%;
+  }
+  .integrations-section .col-right {
+    width: 40%;
+  }
 }
 
 /* TABLET SIZE */
@@ -721,9 +728,24 @@ main {
     --h3-size: 34px;
   }
   /* unified platform} */
-
   .unified-patform-section h2 {
     width: 100%;
+  }
+  /* integration section */
+  .integrations-section .card-container {
+    flex-direction: column;
+  }
+  .integrations-section .card-container .card {
+    width: 100%;
+  }
+  /* why swipe */
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
   }
 }
 
@@ -744,4 +766,23 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   /* unified platform} */
+  /* integration section */
+  .integrations-section .col-right {
+    display: none;
+  }
+  /* why swipe */
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+  .why-swipe-section .card-container .card img {
+    height: 50px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
