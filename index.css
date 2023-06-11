@@ -700,3 +700,48 @@ main {
   width: 24px;
   margin-right: var(--spacing-sm);
 }
+
+@media only screen and (max-width: 1144px) {
+  .section-container {
+    padding: 0 var(--spacing-md);
+  }
+}
+@media only screen and (max-width: 850px) {
+  .partners-grid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* TABLET SIZE */
+@media only screen and (max-width: 768px) {
+  :root {
+    --h1-size: 64px;
+    --h1-height: 72px;
+    --h3-size: 34px;
+  }
+  /* unified platform} */
+
+  .unified-patform-section h2 {
+    width: 100%;
+  }
+}
+
+/* Mobiel SIZE */
+@media only screen and (max-width: 550px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .col-left {
+    width: 100%;
+  }
+  .two-column .col-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* unified platform} */
+}
