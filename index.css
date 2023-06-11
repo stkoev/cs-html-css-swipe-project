@@ -803,6 +803,10 @@ main {
     width: 100%;
   }
   /* why swipe */
+  .why-swipe-section {
+    margin: 0 0 var(--spacing-xl) 0;
+    padding: var(--spacing-sm) 0 var(--spacing-md) 0;
+  }
   .why-swipe-section .card-container {
     flex-wrap: wrap;
   }
@@ -870,11 +874,24 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   /* unified platform} */
+  .unified-patform-section {
+    padding: var(--spacing-md) 0;
+  }
   /* integration section */
+  .integrations-section {
+    padding: var(--spacing-lg) 0;
+  }
+  .integrations-section::before {
+    height: 850px;
+  }
   .integrations-section .col-right {
     display: none;
   }
   /* why swipe */
+  .why-swipe-section {
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+    padding: var(--spacing-sm) 0 var(--spacing-md) 0;
+  }
   .why-swipe-section .card-container .card {
     width: 100%;
     margin: var(--spacing-sm) 0;
@@ -883,6 +900,12 @@ main {
     height: 50px;
   }
   /* Global section */
+  .global-section {
+    padding: var(--spacing-sm) 0 0 0;
+  }
+  .global-section .card-container {
+    margin-top: var(--spacing-sm);
+  }
   .global-section .card-container .card {
     width: 100%;
     margin: var(--spacing-sm) 0;
@@ -891,6 +914,9 @@ main {
     opacity: 10%;
   }
   /* virtual events section */
+  .virtual-events-section {
+    padding: 0;
+  }
   .virtual-events-section .swipe-sessions-card {
     width: 100%;
     margin: var(--spacing-lg) 0;
