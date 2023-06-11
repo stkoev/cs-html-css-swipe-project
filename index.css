@@ -795,6 +795,20 @@ main {
   #globe {
     opacity: 10%;
   }
+  /* virtual events section */
+  .virtual-events-section .swipe-sessions-card {
+    width: 100%;
+    margin: var(--spacing-lg) 0;
+  }
+  .virtual-events-section .swipe-sessions-card .secondary-text {
+    width: 95%;
+  }
+  .virtual-events-section .swipe-sessions-card .card-top {
+    height: 40%;
+  }
+  #sessions-logo {
+    width: 300px;
+  }
 }
 
 html,
