@@ -22,12 +22,12 @@
 
   --standard-width: 1144px;
 
-  /* spacing */
+  /* Spacing variables */
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
-
+  /* Color variables */
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
@@ -36,6 +36,7 @@
   --bg-white: white;
   --bg-light: #f7f9fc;
 
+  --standard-border-radius: 20px;
   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
   --primary-gradient: linear-gradient(
     101.33deg,
@@ -45,10 +46,16 @@
     #83e2ff 96.96%
   );
 }
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
-  width: 100%;
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
@@ -201,7 +208,7 @@ p {
   font-size: var(--button-size);
   letter-spacing: 1.25px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   border: none;
   background-color: var(--primary-accent);
   color: var(--text-light);
@@ -382,22 +389,23 @@ main {
   grid-area: card;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 #slack-invoice {
   grid-area: slack;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 #phone {
   grid-area: phone;
   width: 100%;
-
-  box-shadow: var(--standard-box-shadow);
 }
 #dash {
   grid-area: dash;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: var(--standard-border-radius);
 }
 
 /* Integrations sections column */
@@ -456,11 +464,11 @@ main {
 #api-code {
   max-width: 470px;
   margin: 0 0 var(--spacing-md) 0;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
 }
 #terminal-code {
   max-width: 470px;
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
 }
 
 /* why swipe section */
@@ -570,7 +578,7 @@ main {
   width: 540px;
   height: 446px;
   box-shadow: var(--standard-box-shadow);
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   overflow: hidden;
 }
 .swipe-sessions-card .card-top {
@@ -730,6 +738,7 @@ main {
   .partners-grid {
     width: 100%;
     height: auto;
+    margin: var(--spacing-md);
   }
   /* Integration section */
   .integrations-section .col-left {
@@ -757,7 +766,7 @@ main {
     width: 50px;
     height: 30px;
     background-color: rgba(250, 250, 250, 0.25);
-    border-radius: 20px;
+    border-radius: var(--standard-border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -948,11 +957,4 @@ main {
   .footer .icon-link img {
     width: 18px;
   }
-}
-
-html,
-body {
-  width: 100%;
-  position: relative;
-  overflow-x: hidden;
 }
